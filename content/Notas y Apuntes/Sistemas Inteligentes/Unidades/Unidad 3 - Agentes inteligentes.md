@@ -10,7 +10,7 @@ aliases:
 -----
 # Definición
 
->[!book-blck] ## Agente inteligente
+>[!quote] ## Agente inteligente
 >Es cualquier cosa capaz de percibir su medioambiente con la ayuda de sensores y actuar en ese medio utilizando actuadores.
 
 ![[Agente Inteligente.png]]
@@ -39,13 +39,13 @@ $$
 ----
 ## Agentes racionales 
 
->[!book-blck] Agente racional
+>[!quote] Agente racional
 >Un agente racional es aquel que hace lo correcto; es decir, cada elemento de la tabla que define la función del agente se tendría que rellenar correctamente.
 
->[!chatgpt-blue] ## Agente racional - GPT
+>[!info] Agente racional - GPT
 >Un agente racional es un concepto utilizado en la inteligencia artificial y la teoría de la decisión para describir un sistema que toma decisiones de manera óptima basándose en la información disponible y sus objetivos. Un agente racional es capaz de percibir su entorno, razonar sobre la información disponible y elegir la acción más adecuada para alcanzar sus objetivos.
 
->[!question] ## Qué es hacer lo correcto?
+>[!question] Qué es hacer lo correcto?
 
 Como primera aproximación, se puede decir que lo correcto es aquello que permite al agente obtener un mejor resultado.
 
@@ -81,7 +81,7 @@ En el diseño de un agente racional el primer paso siempre consiste en especific
 
 ------
 
->[!example] ## Ejemplo - Agentes inteligentes
+>[!example] Ejemplo - Agentes inteligentes
 
 | Agente             | Medidas de rendimiento                                                                                                                                       | Entorno                                                                                                                                        | Actuadores                                                                                                                                                   | Sensores                                                                                                                                                                                 |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

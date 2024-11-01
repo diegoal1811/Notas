@@ -19,7 +19,7 @@ aliases:
 ----
 # Definiciones de inteligencia artificial
 
->[!book-blck] Inteligencia artificial
+>[!quote] Inteligencia artificial
 >Es la simulación de procesos de inteligencia humana por parte de máquinas, especialmente sistemas informáticos. Estos procesos incluyen el aprendizaje (adquisición de información y reglas para el uso de la información), el razonamiento (usando las reglas para llegar a conclusiones aproximadas o definitivas) y la autocorrección
 
 
