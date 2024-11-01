@@ -4,7 +4,7 @@ draft: false
 tags:
 ---
 
-# [[content/index|📦 Tabla de Contenido]]
+# [🏠 Inicio - Tabla de Contenido 📦](https://diegoal1811.github.io/Notas/)
 
 ----
 # [[Unidad 1 - Fundamentos de sistemas inteligentes]]

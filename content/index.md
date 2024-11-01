@@ -2,6 +2,10 @@
 title: Apuntes y Documentos
 ---
 
-# Tabla de contenido 📦
-## Materias
-### [[Contenido del curso|Sistemas Inteligentes]]
+# 📦 Tabla de contenido
+## 📝 Notas
+
+### 📓 Materias
+- [[Contenido del curso|Sistemas Inteligentes]]
+
+---
