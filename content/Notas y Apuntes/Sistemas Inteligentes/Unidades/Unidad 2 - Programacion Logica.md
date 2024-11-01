@@ -13,7 +13,15 @@ Modela problemas por medio de la abstracción utilizando un sistema de lógica f
 
 Estudia el uso de la lógica para plantear problemas y el control sobre las reglas de inferencia para alcanzar una solución de manera automática.
 
-> Ejemplos
+## La programación lógica intenta resolver lo siguiente:
+
+Dado un problema S, saber si la afirmación A es solución o no del problema o en que casos lo es. Además queremos que los métodos sean implantados en maquinas de forma que la resolución del problema se haga de forma automática
+
+- La programación lógica construye una base de conocimientos mediante reglas y hechos.
+- Lógica es el estudio del razonamiento; se refiere específicamente a si el razonamiento es correcto. 
+- La lógica se centra en la relación entre las afirmaciones y no en el contenido de una afirmación en particular.
+
+>[!example] Ejemplo
 > 1. Todos los ingenieros usan camisas a cuadros.
 > 2. Cualquier persona que usa camisa a cuadros es ingeniero en sistemas.
 > 3. Por lo tanto, todos los ingenieros son ingenieros en sistemas.
