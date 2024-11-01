@@ -77,7 +77,7 @@ Un sistema de control está en equilibrio si, en ausencia de cualquier perturbac
 
 Un sistema de control lineal e invariante con el tiempo es estable si la salida termina por regresar a su estado de equilibrio cuando el sistema está sujeto a una condición inicial. 
 
-Un sistema de control ==**lineal**== e ==**invariante con el tiempo**== es críticamente estable si las oscilaciones de la salida continúan de forma indefinida. 
+Un sistema de control ==lineal e invariante con el tiempo== es críticamente estable si las oscilaciones de la salida continúan de forma indefinida. 
 
 Es inestable si la salida diverge sin límite a partir de su estado de equilibrio cuando el sistema está sujeto a una condición inicial.
 
