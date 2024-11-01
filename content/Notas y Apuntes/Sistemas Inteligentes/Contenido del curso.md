@@ -1,8 +1,7 @@
 ---
 title: Temario
 draft: false
-tags:
-  - example-tag
+tags: []
 ---
 
 # [[Unidad 1 - Fundamentos de sistemas inteligentes]]
