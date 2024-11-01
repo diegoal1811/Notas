@@ -205,10 +205,10 @@ p⇔q =q ⇔p
 
 | p   | q   | p⇒q |
 | --- | --- | --- |
-| V   | V   |     |
-| V   | F   |     |
-| F   | V   |     |
-| F   | F   |     |
+| V   | V   | V   |
+| V   | F   | F   |
+| F   | V   | F   |
+| F   | F   | V   |
 
 ----
 ## Argumentos: razonamientos que estudia la lógica
