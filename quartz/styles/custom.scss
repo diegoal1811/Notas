@@ -1,3 +1,19 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+//book
+.callout{
+    &[data-callout="book"] {
+    --callout-color: 143, 143, 143;
+    --callout-icon: lucide-book-text;
+}
+}
+
+.callout{
+    &[data-callout="book-blck"] {
+    background-color: rgb(40,40,40);
+    color: white;
+    --callout-color: 255,255,255;
+    --callout-icon: lucide-book-text;
+}
+}
