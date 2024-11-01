@@ -40,10 +40,14 @@ tags:
 - Tipos de agentes inteligentes
 - Ambientes
 
+### [[Unidad 3 - Agentes inteligentes|Enlace 🌐]]
+
 ---
 # [[Unidad 4 - Control convencional]]
 - Control con retroalimentación
 	- Principios de diseño
 	- Controlador PID
+
+### [[Unidad 4 - Control convencional|Enlace 🌐]]
 
 ----
