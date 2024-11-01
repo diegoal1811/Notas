@@ -1,5 +1,5 @@
 ---
-title: Titulo
+title: Temario
 draft: false
 tags:
   - example-tag
