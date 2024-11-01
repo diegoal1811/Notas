@@ -4,7 +4,8 @@ draft: false
 tags:
 ---
 
-# [🏠 Inicio - Tabla de Contenido 📦](https://diegoal1811.github.io/Notas/)
+# Sistemas inteligentes
+## Contenido del curso
 
 ----
 # [[Unidad 1 - Fundamentos de sistemas inteligentes]]
@@ -51,3 +52,4 @@ tags:
 ### [[Unidad 4 - Control convencional|Enlace 🌐]]
 
 ----
+## [🏠 Inicio - Tabla de Contenido 📦](https://diegoal1811.github.io/Notas/)
