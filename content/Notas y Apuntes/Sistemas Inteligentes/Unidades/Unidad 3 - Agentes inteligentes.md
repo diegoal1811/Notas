@@ -1,13 +1,14 @@
 ---
-Fecha: 2024-09-24
-Tipo: Notas
-cssclasses:
-  - justify.css
-  - calllouts.css
-aliases:
-  - Sist. Inteligentes - U3
+title: Unidad 3 - Agentes inteligentes
+draft: false
+tags:
 ---
------
+
+----
+# [[Contenido del curso|🏠 Inicio - Sistemas Inteligentes]]
+
+----
+# 🤖🧠 Agentes inteligentes 
 # Definición
 
 >[!quote] ## Agente inteligente
@@ -157,7 +158,7 @@ Tipos básicos de programas de agente:
 # Agentes reactivos simples
 Seleccionan sus acciones con base a las percepciones actuales, y no toman en cuenta la secuencia de percepciones pasadas.
 - Reglas condición-acción
-	- ==**Si**== <condición>, **==entonces==** <acción>
+	- ==Si== <condición>, ==entonces== <acción>
 
 >[!example] Ejemplo - Robot aspiradora
 
@@ -192,7 +193,7 @@ La actualización del estado interno depende de dos factores:
 - Información de cómo evoluciona el mundo independientemente del agente.
 - Información de cómo afectan al mundo las acciones del agente
 
->A estos lo denominamos **==modelo del mundo==**
+>A estos lo denominamos ==modelo del mundo==
 
 ![[agenteReactivoBasadoModelos.png]]
 
@@ -248,5 +249,13 @@ Responsable de las mejoras
 Responsable de seleccionar las acciones
 ### 4. Generador de problemas
 Sugiere acciones para alcanzar estados nuevos
+
+----
+# [[Contenido del curso|🏠 Inicio - Sistemas Inteligentes]]
+
+----
+# [[Unidad 2 - Programacion Logica|⬅️ Anterior: Unidad 2 - Representación del Conocimiento]]
+
+# [[Unidad 4 - Control convencional|Siguiente: Unidad 4 - Control convencional ➡️]]
 
 ----

@@ -1,13 +1,15 @@
 ---
-Fecha: 2024-09-24
-Tipo: Notas
-cssclasses:
-  - justify.css
-  - calllouts.css
-aliases:
-  - Sist.Inteligentes Control convencional
+title: Unidad 4 - Control convencional
+draft: false
+tags:
 ---
+
+----
+# [[Contenido del curso|🏠 Inicio - Sistemas Inteligentes]]
+
 -----
+# Control convencional
+
 ## Modelo matemático
 Simplicidad contra precisión (ecuación diferencial)
 ## Sistema lineal
@@ -148,14 +150,14 @@ El proceso de seleccionar los parámetros del controlador que cumplan con las es
 
 Ziegler y Nichols sugirieron reglas para sintonizar los controladores PID (esto significa dar valores a $Kp$, $Ti$ y $Td$) basándose en las respuestas escalón experimentales o en el valor de $Kp$ que produce estabilidad marginal cuando sólo se usa la acción de control proporcional.
 
->[!grafica-blck] Control PID - Método experimental
+>[!info] Control PID - Método experimental
 
 | Tipo de controlador | $Kp$      | $Ti$    | $Td$    |
 | ------------------- | --------- | ------- | ------- |
 | P                   | $T/L$     | ∞       | $0$     |
 | PI                  | $0.9 T/L$ | $L/0.3$ | $0$     |
 | PID                 | $1.2 T/L$ | $2L$    | $0.5 L$ |
->[!grafica-blck] Control PID - Método analítico
+>[!info] Control PID - Método analítico
 
 | Tipo de controlador | $Kp$          | $Ti$          | $Td$         |
 | ------------------- | ------------- | ------------- | ------------ |
@@ -168,3 +170,11 @@ Ziegler y Nichols sugirieron reglas para sintonizar los controladores PID (esto 
 
 ![Respuesta en el Tiempo | Sistemas de Control 1](https://www.youtube.com/watch?v=MXsroKE7zGU)
 
+----
+# [[Contenido del curso|🏠 Inicio - Sistemas Inteligentes]]
+
+----
+# [[Unidad 3 - Agentes inteligentes|⬅️ Anterior: Unidad 3 - Agentes inteligentes]]
+
+# Siguiente: Unidad 5 - Redes neuronales (TBA)
+---

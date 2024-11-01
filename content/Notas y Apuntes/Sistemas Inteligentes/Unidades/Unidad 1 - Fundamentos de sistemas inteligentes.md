@@ -1,12 +1,11 @@
 ---
-Fecha: 2024-09-17
-Tipo: Notas
-cssclasses:
-  - justify.css
-  - calllouts.css
-aliases:
-  - Sist. Int. Intro
+title: Unidad 1 - Fundamentos de sistemas inteligentes
+draft: false
+tags:
 ---
+----
+# [[Contenido del curso|🏠 Inicio - Sistemas Inteligentes]]
+
 ----
 # Propiedades generales que presenta la inteligencia humana
 
@@ -73,7 +72,7 @@ Chatbot crea un lenguaje
 Facebook, 2016
 
 ----
-## State of art y futuro de la IA
+# State of art y futuro de la IA
 
 Natural language processing
 
@@ -86,4 +85,14 @@ Virtual assistants
 Augmented reality
 
 ----
-(Video John Conway, el juego de la vida)
+# 📺  Game of Life
+
+![Inventing Game of Life (John Conway) - Numberphile](https://www.youtube.com/watch?v=R9Plq-D1gEk)
+
+----
+# [[Contenido del curso|🏠 Inicio - Sistemas Inteligentes]]
+
+---
+# [[Unidad 2 - Programacion Logica|Siguiente: Unidad 2 - Representación del conocimiento ➡️]]
+
+---

@@ -1,9 +1,12 @@
 ---
-title: Temario
+title: Temario - Sistemas Inteligentes
 draft: false
-tags: []
+tags:
 ---
 
+# [[content/index|📦 Tabla de Contenido]]
+
+----
 # [[Unidad 1 - Fundamentos de sistemas inteligentes]]
 
 - Bases de la inteligencia artificial
@@ -16,8 +19,11 @@ tags: []
 - Inteligencia artificial y control
 	- Definición
 	- Técnicas
+### [[Unidad 1 - Fundamentos de sistemas inteligentes|Enlace 🌐]]
 
-# Unidad 2 - Representación de conocimientos
+---
+# [[Unidad 2 - Programacion Logica|Unidad 2 - Representación del Conocimiento]]
+
 - Lógica simbólica formal
 	- Lógica proposicional
 	- Lógica de predicados
@@ -26,13 +32,18 @@ tags: []
 - Formas estructuradas
 	- Redes asociativas
 - Sintaxis y semántica del lenguaje de programación lógica
+### [[Unidad 2 - Programacion Logica|Enlace 🌐]]
 
-# Unidad 3 - Agentes inteligentes
+---
+# [[Unidad 3 - Agentes inteligentes]]
 - Estructura de los agentes inteligentes
 - Tipos de agentes inteligentes
 - Ambientes
 
-# Unidad 4 - Control convencional
+---
+# [[Unidad 4 - Control convencional]]
 - Control con retroalimentación
 	- Principios de diseño
 	- Controlador PID
+
+----

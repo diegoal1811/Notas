@@ -1,12 +1,11 @@
 ---
-Fecha: 2024-09-17
-Tipo: Notas
-cssclasses:
-  - justify.css
-  - calllouts.css
-aliases:
-  - U2 - Programacion Logica
+title: Unidad 2 - Representación del Conocimiento
+draft: false
+tags:
 ---
+-----
+# [[Contenido del curso|🏠 Inicio - Sistemas Inteligentes]]
+
 -----
 # Programación Lógica
 
@@ -77,7 +76,7 @@ La tabla de verdad de una proposición `P`, formada por las proposiciones indivi
 | V   | F   | V   |
 | V   | V   | V   |
 
->[!tasks] Ejercicios
+>[!tldr] Ejercicios
 
 ### 1. p ∧ ¬q
 
@@ -273,3 +272,11 @@ $\text{antecedente} \text{ → } \text{consecuente}$
 
 >Si es verdad el antecedente, entonces es verdad el consecuente
 
+----
+# [[Contenido del curso|🏠 Inicio - Sistemas Inteligentes]]
+
+----
+# [[Unidad 1 - Fundamentos de sistemas inteligentes|⬅️Anterior: Unidad 1 - Fundamentos de sistemas inteligentes]]
+
+# [[Unidad 3 - Agentes inteligentes|Siguiente: Unidad 3 - Agentes inteligentes ➡️]]
+---

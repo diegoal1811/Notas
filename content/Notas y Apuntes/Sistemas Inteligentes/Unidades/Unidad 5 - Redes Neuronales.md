@@ -1,13 +1,15 @@
 ---
-Fecha: 2024-10-04
-Tipo: Notas
-cssclasses:
-  - justify.css
-  - calllouts.css
-aliases:
-  - Sist. Inteligentes - Unidad 5
+title: Unidad 5 - Redes Neuronales
+draft: true
+tags:
 ---
-------
+
+----
+# [[Contenido del curso|🏠 Inicio - Sistemas Inteligentes]]
+
+----
+# Redes neuronales
+
 >[!example] Ejercicio
 >Colocar 5 características que tu consideres para comprar un auto y ponerle una ponderación de importancia. La suma de esos factores debe ser 1
 ## Criterios para comprar un auto 🚗
