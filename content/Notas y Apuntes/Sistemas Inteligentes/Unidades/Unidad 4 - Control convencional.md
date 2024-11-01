@@ -164,7 +164,7 @@ Ziegler y Nichols sugirieron reglas para sintonizar los controladores PID (esto 
 | PID                 | $0.6K_{cr}$   | $0.5P{cr}$    | $0.125P{cr}$ |
 
 ----
->[!youtube] # 📺 Video - Sistemas de control
+>[!tip] # 📺 Video - Sistemas de control
 
-[Respuesta en el Tiempo | Sistemas de Control 1](https://www.youtube.com/watch?v=MXsroKE7zGU)
+![Respuesta en el Tiempo | Sistemas de Control 1](https://www.youtube.com/watch?v=MXsroKE7zGU)
 
