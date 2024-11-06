@@ -176,5 +176,6 @@ Ziegler y Nichols sugirieron reglas para sintonizar los controladores PID (esto 
 ----
 # [[Unidad 3 - Agentes inteligentes|⬅️ Anterior: Unidad 3 - Agentes inteligentes]]
 
-# Siguiente: Unidad 5 - Redes neuronales (TBA)
+# [[Unidad 5 - Redes Neuronales|Siguiente: Unidad 5 - Redes neuronales ➡️]]
+
 ---

@@ -34,7 +34,7 @@ Comparar entre estos dos autos siguiendo la ponderación que estableciste.
 # Redes neuronales
 ## Definición
 
->[!book-blck] ## Red neuronal
+>[!quote] ## Red neuronal
 >Una Red de Neuronas Artificial podría definirse como un grafo cuyos nodos están constituidos por unidades de proceso idénticas, y que propagan información a través de los arcos.
 >
 >En este grafo se distinguen tres tipos de nodos: los de entrada, los de salida y los intermedios.
@@ -61,7 +61,7 @@ Diapositiva 151
 
 ## Definición - Red neuronal
 
->[!book-blck] Red Neuronal
+>[!quote] Red Neuronal
 >Una red neuronal es una colección de neuronas de McCulloch y Pitts, todas con las mismas escalas de tiempos, donde sus salidas están conectadas a las entradas de otras neuronas.
 
 Una red neuronal de células de McCulloch-Pitts tiene la capacidad de computación universal. 
@@ -388,7 +388,7 @@ Normaliza todos los datos
 - Establece la media en 0
 - Establece la desviación estándar en 1
 
->[!book-blck] Ejemplo
+>[!quote] Ejemplo
 >[LinearSVC — scikit-learn 1.5.2 documentation](https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html)
 
 Nos quedamos en la Diapositiva del SVM del iris (graficación del SVM )
