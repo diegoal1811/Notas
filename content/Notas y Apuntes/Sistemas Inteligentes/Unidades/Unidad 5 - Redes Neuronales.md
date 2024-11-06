@@ -5,11 +5,6 @@ tags:
 ---
 
 ----
-# [[Contenido del curso|🏠 Inicio - Sistemas Inteligentes]]
-
-----
-# Redes neuronales
-
 >[!example] Ejercicio
 >Colocar 5 características que tu consideres para comprar un auto y ponerle una ponderación de importancia. La suma de esos factores debe ser 1
 ## Criterios para comprar un auto 🚗
@@ -508,4 +503,181 @@ Se usa la clase `DecissionTreeRegressor`
 - En el caso de la regresión, el algoritmo CART no intenta minimizar la impureza; sino lo que intenta minimizar es el ECM (error cuadrático medio)
 
 >[!caution] NO es recomendable dejarlo sin restricciones, se recomienda poner un número máximo de hojas
+
+-----
+# 🌲🎲 Bosques aleatorios (Random Forest)
+
+- Utilizan el concepto de "sabiduría colectiva"
+- Usan algoritmos de ensamblaje.
+	- Se utilizará más de un modelo «un grupo de modelos»
+- Un grupo de predictores se denomina ensamble.
+- Al ensamble de árboles de decisión le llamamos Random Forest.
+
+- Logistic Regression
+- SVM Classifier
+- Random Forest classifier
+- Other
+
+>Un bosque aleatorio es un ensamble de puros arboles de decisión
+## 🗳️ 🔨 Voto duro
+
+```mermaid
+graph TD
+    subgraph Random Forest
+        A[Árbol 1] --> Clase_A
+        B[Árbol 2] --> Clase_B
+        C[Árbol 3] --> Clase_A
+        D[Árbol 4] --> Clase_A
+        E[Árbol 5] --> Clase_B
+    end
+    
+    subgraph Voto Duro
+        Clase_A[Clase A] -- Mayoría de votos --> Predicción_Final
+        Clase_B[Clase B] -- Minoría de votos --> Predicción_Final
+    end
+
+```
+
+>[!tldr] Ejemplo voto duro
+
+```Python
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import VotingClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
+
+log_clf = LogisticRegression()
+rnd_clf = RandomForestClassifier()
+svm_clf = SVC()
+voting_clf = VotingClassifier()
+estimators = [(lr,log_clf),('rf',rnd_clf),('svc',svm_clf)] , voting = 'hadrd'
+voting_clf.fit(X_train, y_train)
+```
+
+>[!tldr] Evaluación de modelos
+
+```Python
+from sklear.metrics import acuracy_score
+for clf in (log_clf,rnd_clf,svm_clf,voting_clf):
+	clf.fit(X_train,y_train)
+	y_pred = clf.predict(X_test)
+	print(clf._class_._name_._,acuracy_score(y_test,y_pred))
+```
+
+## 🗳️🪶 Voto suave (Soft Voting)
+
+>[!quote] Definición
+>Es cuando la predicción se realiza con la probabilidad más alta promedio de los clasificadores (`predict_proba()`).
+
+>Para poder usar soft voting, tenemos que hacer que el parámetro voting sea igual a soft: `voting = 'soft'`
+
+```Python
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import VotingClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
+
+log_clf = LogisticRegression()
+rnd_clf = RandomForestClassifier()
+svm_clf = SVC()
+voting_clf = VotingClassifier()
+estimators = [(lr,log_clf),('rf',rnd_clf),('svc',svm_clf)] , voting = 'soft'
+voting_clf.fit(X_train, y_train)
+```
+
+## Bagging y pasting
+
+Otro método para obtener un conjunto de clasificadores es el de usar el mismo algoritmo de entrenamiento con subconjuntos aleatorios distintos.
+
+Cuando el muestreo es con reemplazo, el método se llama *bagging*, en caso contrario se llama *pasting*.
+
+### Bagging
+
+```mermaid
+graph TD
+    A[Conjunto de datos original] --> B[Muestreo con reemplazo]
+    B --> C[Modelo 1]
+    B --> D[Modelo 2]
+    B --> E[Modelo 3]
+    B --> F[Modelo n]
+    C --> G[Predicciones]
+    D --> G
+    E --> G
+    F --> G
+    G --> H[Votación/Promedio]
+    H --> I[Predicción final]
+```
+
+### Pasting
+
+```mermaid
+graph TD
+    A[Conjunto de datos original] --> B[División en subconjuntos]
+    B --> C[Modelo 1]
+    B --> D[Modelo 2]
+    B --> E[Modelo 3]
+    B --> F[Modelo n]
+    C --> G[Predicciones]
+    D --> G
+    E --> G
+    F --> G
+    G --> H[Concatenación]
+    H --> I[Predicción final]
+```
+
+
+>[!info]
+>Scikit Learn puede hacer bagging y pasting usando las siguientes clases:
+>- `BaggingClassifier`
+>- `BaggingRegressor`
+>- Para diferenciar entre bagging y pasting se tiene que establecer `bootstrap = True` para bagging y `bootstrap = False` para pasting
+
+>[!tldr] Ejemplo bagging
+
+```Python
+from sklearn.ensemble import BaggingClassifier
+from sklearn.tree import DecissionTreeClassifier
+bag_clf = BaggingClassifier(DecissionTreeClassifier(),n_estimators = 500, max_samples = 100, bootstrap = True, n_jobs = -1)
+bag_clf.fit(X_train,y_train)
+y_pred = bag_clf.predict(X_test)
+```
+
+>[!warning] NOTA Si el clasificador tiene un método `predict_proba()` se realiza por default un soft voting
+
+> [!info]
+>En Bagging:
+>- Algunas instancias se pueden muestrear varias veces para los entrenamientos de los clasificadores.
+>- Algunas otras instancias pueden no muestrearse nunca, a estas instancias la llamamos *out-of-bag* `oob`
+>- Podemos utilizar estas `oob` como conjunto de prueba, esto lo hacemos haciendo `oob_score = True`
+
+>[!example] Ejemplo
+
+```Python
+bag_clf = BaggingClassifier(DecisionTreeClassifier(),n_estimators=500, bootstrap=True, n_jobs-1, oob_score = True)
+bag_clf.fit(X_train,y_train)
+bag_clf.oob_score_
+
+from sklearn.metrics import accuracy_score
+y_pred = bag_clf.predict (X_test)
+accuracy_score (y_test,y_pred)
+```
+
+>[!warning] NOTA - Este modelo realiza una validación en automático con el conjunto `oob`
+
+### `BaggingClassifier`
+
+- Soporta el submuestreo de características.
+- Los hiper-parámetros `max_features` y `Bootstrap_features` controlan esta característica.
+
+>[!example] Ejemplo - generando Bosque Aleatorio
+
+```Python
+from sklearn.ensemble import RandomForestClassifier
+rnd_clf = RandomForestClassifier(n_estimators=500,max_leaf_nodes=16,n_jobs=1)
+rnd_clf.fit(X_train,y_train)
+y_pred_rf = rnd_clf.predict(X_test)
+```
+
+>[!warning] NOTA
+>Un `RandomForestClassifier` cuenta con todos los hiper-parámetros de un `DecissionTreeClassifier` además de todos los hiper-parámetros de un `BaggingClassifier`
 
