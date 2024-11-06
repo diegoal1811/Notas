@@ -1,9 +1,8 @@
 ---
 title: Unidad 5 - Redes Neuronales
-draft: true
+draft: false
 tags:
 ---
-
 ----
 >[!example] Ejercicio
 >Colocar 5 características que tu consideres para comprar un auto y ponerle una ponderación de importancia. La suma de esos factores debe ser 1
@@ -681,3 +680,9 @@ y_pred_rf = rnd_clf.predict(X_test)
 >[!warning] NOTA
 >Un `RandomForestClassifier` cuenta con todos los hiper-parámetros de un `DecissionTreeClassifier` además de todos los hiper-parámetros de un `BaggingClassifier`
 
+----
+# [[Contenido del curso|🏠 Inicio - Sistemas Inteligentes]]
+
+# [[Unidad 4 - Control convencional|⬅️ Anterior: Unidad 4 - Control convencional]]
+
+----
