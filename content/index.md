@@ -7,5 +7,6 @@ title: Apuntes y Documentos
 
 ### 📓 Materias
 - [[Contenido del curso|Sistemas Inteligentes]]
+- [[Sistemas Embebidos Index|Sistemas Embebidos 🖥️]]
 
 ---
